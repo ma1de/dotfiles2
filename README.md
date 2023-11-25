@@ -17,6 +17,9 @@ maim, xdotool, xclip (for screenshots)<br>
 # Showcase
 <img src="https://github.com/ma1de/dotfiles2/blob/master/assets/first.png" alt="Rice 1">
 
+# Support
+If you encounter any errors just open up an issue and I'll answer
+
 # References
 [Artix Linux](https://artixlinux.org/) <br>
 [Catppuccin](https://github.com/catppuccin) <br>
