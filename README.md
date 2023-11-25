@@ -6,6 +6,7 @@ artix (installed)<br>
 paru/yay (any AUR package manager)<br>
 neovim<br> 
 i3-gaps<br>
+[Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) (JetBrains Mono Nerd, Iosevka Nerd)<br>
 xorg for i3<br>
 [picom fork](https://github.com/jonaburg/picom) <br>
 [rofi theme](https://github.com/catppuccin/rofi) <br>
