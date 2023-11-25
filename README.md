@@ -15,7 +15,7 @@ polybar<br>
 maim, xdotool, xclip (for screenshots)<br>
 
 # Showcase
-<img src="https://github.com/ma1de/ma1de/blob/main/assets/first.png" alt="Rice 1">
+<img src="https://github.com/ma1de/dotfiles2/blob/main/assets/first.png" alt="Rice 1">
 
 # References
 [Artix Linux](https://artixlinux.org/) <br>
