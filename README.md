@@ -2,18 +2,18 @@
 My dotfiles for Artix Linux
 
 # Requirements
-artix (installed)<br>
-paru/yay (any AUR package manager)<br>
-neovim<br> 
+Artix (installed)<br>
+Paru/yay (any AUR package manager)<br>
+Neovim<br> 
 i3-gaps<br>
 [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) (JetBrains Mono Nerd, Iosevka Nerd)<br>
-xorg for i3<br>
-[picom fork](https://github.com/jonaburg/picom) <br>
-[rofi theme](https://github.com/catppuccin/rofi) <br>
-kitty terminal<br>
-polybar<br>
-[boomer](https://github.com/tsoding/boomer) <br>
-maim, xdotool, xclip (for screenshots)<br>
+Xorg for i3<br>
+[Picom fork](https://github.com/jonaburg/picom) <br>
+[Rofi theme](https://github.com/catppuccin/rofi) <br>
+Kitty terminal<br>
+Polybar<br>
+[Boomer](https://github.com/tsoding/boomer) <br>
+Maim, xdotool, xclip (for screenshots)<br>
 
 # Showcase
 <img src="https://github.com/ma1de/dotfiles2/blob/master/assets/first.png" alt="Rice 1">
