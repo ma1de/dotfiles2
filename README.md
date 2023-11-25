@@ -2,6 +2,12 @@
 My dotfiles for Artix Linux
 
 # Requirements
+P.S change paru to your AUR package manager
+```console
+$ pacman -S neovim neofetch xorg kitty polybar rofi maim xdotool xclip 
+$ paru -S shell-color-scripts i3-gaps pfetch
+```
+
 Artix (installed)<br>
 Paru/yay (any AUR package manager)<br>
 Neovim<br>
