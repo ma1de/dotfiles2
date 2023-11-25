@@ -1,2 +1,26 @@
-# dotfiles2 
-lol
+# dotfiles2
+My dotfiles for Artix Linux
+
+# Requirements
+artix (installed)<br>
+paru/yay (any AUR package manager)<br>
+neovim<br> 
+i3-gaps<br>
+xorg for i3<br>
+[picom fork](https://github.com/jonaburg/picom) <br>
+[rofi theme](https://github.com/catppuccin/rofi) <br>
+kitty terminal<br>
+polybar<br>
+[boomer](https://github.com/tsoding/boomer) <br>
+maim, xdotool, xclip (for screenshots)<br>
+
+# Showcase
+<img src="https://github.com/ma1de/ma1de/blob/main/assets/first.png" alt="Rice 1">
+
+# References
+[Artix Linux](https://artixlinux.org/) <br>
+[Catppuccin](https://github.com/catppuccin) <br>
+[neovim](https://github.com/neovim/neovim) <br>
+[AUR](https://aur.archlinux.org) <br>
+[i3](https://i3wm.org) <br>
+[Xorg](https://x.org/wiki) <br>
