@@ -6,6 +6,8 @@ P.S change paru to your AUR package manager
 ```console
 $ pacman -S neovim neofetch xorg kitty polybar rofi maim xdotool xclip 
 $ paru -S shell-color-scripts i3-gaps pfetch
+$ wget https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono/Ligatures
+$ wget https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka
 ```
 
 Artix (installed)<br>
