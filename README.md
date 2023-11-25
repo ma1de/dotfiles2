@@ -4,7 +4,8 @@ My dotfiles for Artix Linux
 # Requirements
 Artix (installed)<br>
 Paru/yay (any AUR package manager)<br>
-Neovim<br> 
+Neovim<br>
+Neofetch, pfetch, colorscript<br>
 i3-gaps<br>
 [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) (JetBrains Mono Nerd, Iosevka Nerd)<br>
 Xorg for i3<br>
@@ -17,6 +18,9 @@ Maim, xdotool, xclip (for screenshots)<br>
 
 # Showcase
 <img src="https://github.com/ma1de/dotfiles2/blob/master/assets/first.png" alt="Rice 1">
+
+# Shell 
+You can use any shell (bash, zsh, etc), just configure it yourself
 
 # Support
 If you encounter any errors just open up an issue and I'll answer
