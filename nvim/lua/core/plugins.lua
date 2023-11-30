@@ -118,4 +118,23 @@ require("lazy").setup({
             require('core.plugin_config.presence')
         end
     },
+
+    {
+        "simrat39/rust-tools.nvim",
+        config = function()
+            require('core.plugin_config.rust-tools')
+        end
+    },
+
+    {
+        'mfussenegger/nvim-dap'
+    },
+
+    {
+        'mfussenegger/nvim-jdtls',
+        filetype = {"java"},
+        config = function()
+            require('core.plugin_config.jdtls')
+        end
+    },
 })

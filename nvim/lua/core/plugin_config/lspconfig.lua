@@ -24,26 +24,31 @@ require('lspconfig').clangd.setup {
     capabilities = capabilities
 }
 
-require('lspconfig').rust_analyzer.setup {
+require('lspconfig').pylyzer.setup {
     on_attach = on_attach,
     capabilities = capabilities,
-
-    settings = {
-        ['rust-analyzer'] = {
-            imports = {
-                granularity = {
-                    group = "module",
-                },
-                prefix = "self",
-            },
-            cargo = {
-                buildScripts = {
-                    enable = true,
-                },
-            },
-            procMacro = {
-                enable = true
-            },
-        }
-    }
 }
+
+--require('lspconfig').rust_analyzer.setup {
+--    on_attach = on_attach,
+--    capabilities = capabilities,
+
+--    settings = {
+--        ['rust-analyzer'] = {
+--           imports = {
+--                granularity = {
+--                    group = "module",
+--                },
+--                prefix = "self",
+--            },
+--            cargo = {
+--                buildScripts = {
+--                    enable = true,
+--                },
+--            },
+--            procMacro = {
+--                enable = true
+--            },
+--        }
+--    }
+--}
