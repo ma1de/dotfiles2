@@ -112,10 +112,6 @@ require("lazy").setup({
     },
 
     {
-        "EdenEast/nightfox.nvim"
-    },
-
-    {
         'saecki/crates.nvim',
         tag = 'stable',
         dependencies = { 'nvim-lua/plenary.nvim' },
@@ -148,5 +144,9 @@ require("lazy").setup({
         config = function()
             require('core.plugin_config.jdtls')
         end
+    },
+
+    {
+        "xero/miasma.nvim"
     },
 })
