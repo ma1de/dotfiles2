@@ -52,3 +52,12 @@ URxvt.urgentOnBell: true
 URxvt.iso14755: false
 urxvt*depth: 32
 urxvt*background: rgba:0000/0000/0200/c800
+
+! Font stuff
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
