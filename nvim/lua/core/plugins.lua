@@ -102,4 +102,20 @@ require("lazy").setup({
     {
         "EdenEast/nightfox.nvim"
     },
+
+    {
+        'saecki/crates.nvim',
+        tag = 'stable',
+        dependencies = { 'nvim-lua/plenary.nvim' },
+        config = function()
+            require('crates').setup()
+        end
+    },
+
+    {
+        "andweeb/presence.nvim",
+        config = function()
+            require('core.plugin_config.presence')
+        end
+    },
 })
