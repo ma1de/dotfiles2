@@ -9,7 +9,7 @@ cmp.setup({
         ['<C-f>'] = cmp.mapping.scroll_docs(4),
         ['<C-o>'] = cmp.mapping.complete(),
         ['<C-e>'] = cmp.mapping.abort,
-        ['<Enter>'] = cmp.mapping.confirm({ select = true }),
+        ['<C-Enter>'] = cmp.mapping.confirm({ select = true }),
     }),
 
     formatting = {
