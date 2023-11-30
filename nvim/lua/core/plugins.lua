@@ -68,6 +68,18 @@ require("lazy").setup({
     },
 
     {
+        "hrsh7th/cmp-vsnip"
+    },
+
+    {
+        "hrsh7th/vim-vsnip"
+    },
+
+    {
+        "onsails/lspkind.nvim"
+    },
+
+    {
         'saadparwaiz1/cmp_luasnip'
     },
 

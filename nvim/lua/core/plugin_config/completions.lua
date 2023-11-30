@@ -1,6 +1,7 @@
 local cmp = require('cmp')
+local lspkind = require('lspkind')
 
-require('luasnip.loaders.from_vscode').lazy_load()
+--require('luasnip.loaders.from_vscode').lazy_load()
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
@@ -11,16 +12,25 @@ cmp.setup({
         ['<Enter>'] = cmp.mapping.confirm({ select = true }),
     }),
 
-    snippet = {
-        expand = function(args)
-            require('luasnip').lsp_expand(args.body)
-        end,
+    formatting = {
+        format = lspkind.cmp_format({
+        mode = 'symbol_text',
+        maxwidth = 50,
+        ellipsis_char = '...',
+        before = function (_, vim_item)
+            return vim_item
+        end
+        })
     },
 
-    sources = cmp.config.sources({
+    sources = {
         { name = 'nvim_lsp' },
-        { name = 'luasnip' },
-    }, {
-        { name = 'buffer' }
-    }),
+        { name = 'nvim_lsp_signature_help' },
+        { name = 'vsnip' },
+    },
+    snippet = {
+        expand = function(args)
+            vim.fn["vsnip#anonymous"](args.body) -- because we are using the vsnip cmp plugin
+        end,
+  },
 })
