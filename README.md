@@ -20,7 +20,7 @@ i3-gaps<br>
 Xorg for i3<br>
 [Picom fork](https://github.com/jonaburg/picom) <br>
 [Rofi theme](https://github.com/catppuccin/rofi) <br>
-Kitty terminal<br>
+urxvt as a terminal<br>
 Polybar<br>
 [Boomer](https://github.com/tsoding/boomer) <br>
 Maim, xdotool, xclip (for screenshots)<br>
