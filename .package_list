@@ -4,7 +4,7 @@ pfetch
 shell-color-scripts
 i3-gaps
 xorg
-kitty
+rxvt-unicode
 polybar
 maim
 xdotool
