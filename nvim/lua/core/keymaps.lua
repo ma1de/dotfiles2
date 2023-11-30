@@ -15,7 +15,7 @@ vim.opt.expandtab = true
 vim.wo.number = true
 vim.opt.relativenumber = true
 
-vim.cmd [[colorscheme rose-pine]]
+vim.cmd [[colorscheme carbonfox]]
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
