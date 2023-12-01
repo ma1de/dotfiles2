@@ -8,7 +8,7 @@ cmp.setup({
         ['<C-b'] = cmp.mapping.scroll_docs(-4),
         ['<C-f>'] = cmp.mapping.scroll_docs(4),
         ['<C-o>'] = cmp.mapping.complete(),
-        ['<C-e>'] = cmp.mapping.abort,
+        ['<Enter>'] = cmp.mapping.abort(),
         ['<C-m>'] = cmp.mapping.confirm({ select = true }),
     }),
 
