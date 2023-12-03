@@ -1,6 +1,6 @@
 local home = os.getenv('HOME')
 local jdtls = require('jdtls')
-local root_markers = {'gradlew', 'mvnw', '.git'}
+local root_markers = {'build.gradle', 'pom.xml', 'gradlew', 'mvnw'}
 local root_dir = require('jdtls.setup').find_root(root_markers)
 
 local workspace_folder = home .. "/.local/share/eclipse/" .. vim.fn.fnamemodify(root_dir, ":p:h:t")
@@ -102,4 +102,6 @@ local config = {
   },
 }
 
-jdtls.start_or_attach(config)
+if (root_dir ~= nil) then
+    jdtls.start_or_attach(config)
+end

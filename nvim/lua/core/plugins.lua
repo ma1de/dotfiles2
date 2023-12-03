@@ -140,10 +140,19 @@ require("lazy").setup({
 
     {
         'mfussenegger/nvim-jdtls',
-        ft = "java",
     },
 
     {
-        "xero/miasma.nvim"
+        "madyanov/gruber.vim"
+    },
+
+     {
+        "kdheepak/lazygit.nvim",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+        },
+        config = function()
+            require('telescope').load_extension('lazygit')
+        end
     },
 })

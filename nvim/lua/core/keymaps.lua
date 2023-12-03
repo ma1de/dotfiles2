@@ -15,8 +15,9 @@ vim.opt.expandtab = true
 vim.wo.number = true
 vim.opt.relativenumber = true
 
-vim.cmd [[colorscheme miasma]]
+vim.cmd [[colorscheme gruber]]
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.keymap.set('n', '<leader>git', ':LazyGit<CR>')
 
 require('mason').setup()
