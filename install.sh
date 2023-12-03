@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "WARNING: This script only works for Arch based distributions!"
 
-sudo pacman -S neovim neofetch xorg kitty polybar rofi maim xdotool xclip
+sudo pacman -S neovim neofetch xorg kitty polybar rofi maim xdotool xclip feh
 
 git clone https://aur.archlinux.org/paru.git && cd paru && makepkg-si
 

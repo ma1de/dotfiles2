@@ -32,8 +32,8 @@ exec_always --no-startup-id autotiling &
 # Polybar
 exec_always --no-startup-id $HOME/.config/i3/scripts/polybar.sh &
 
-# Nitrogen
-exec_always --no-startup-id nitrogen --restore &
+# Feh
+exec_always --no-startup-id $HOME/.config/i3/scripts/wallpaper.sh &
 
 # Keyboard Layout & Caps Fix
 exec_always --no-startup-id $HOME/.config/i3/scripts/keyboard.sh &
