@@ -30,7 +30,10 @@ require("lazy").setup({
     },
 
     {
-        "nvim-lualine/lualine.nvim"
+        "nvim-lualine/lualine.nvim",
+        config = function()
+            require('core.plugin_config.lualine')
+        end
     },
 
     {
@@ -58,13 +61,6 @@ require("lazy").setup({
 
     {
         'hrsh7th/cmp-nvim-lsp'
-    },
-
-    {
-        'L3MON4D3/LuaSnip',
-        dependencies = {
-            'rafamadriz/friendly-snippets'
-        }
     },
 
     {
@@ -143,7 +139,16 @@ require("lazy").setup({
     },
 
     {
-        "madyanov/gruber.vim"
+        "blazkowolf/gruber-darker.nvim",
+        opts = {
+            bold = true,
+            italic = {
+                strings = false,
+                comments = false,
+                operators = false,
+                folds = false,
+            },
+        }
     },
 
      {
@@ -155,4 +160,19 @@ require("lazy").setup({
             require('telescope').load_extension('lazygit')
         end
     },
+
+    {
+        "nvim-tree/nvim-web-devicons"
+    },
+
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        config = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+
+            require('which-key').setup {}
+        end
+    }
 })
