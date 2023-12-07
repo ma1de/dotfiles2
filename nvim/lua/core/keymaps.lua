@@ -18,6 +18,9 @@ vim.opt.relativenumber = true
 
 vim.cmd [[colorscheme gruber-darker]]
 
+vim.cmd [[set list]]
+vim.cmd [[set lcs+=space:·]]
+
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>git', ':LazyGit<CR>')
 
