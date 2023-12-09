@@ -14,56 +14,11 @@ end
 
 capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require('lspconfig').lua_ls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
+local servers = {"lua_ls", "html", "cssls", "clangd", "pylyzer", "tsserver"};
 
-require('lspconfig').html.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-}
-
-require('lspconfig').cssls.setup {
-    on_atach = on_attach,
-    capabilities = capabilities,
-}
-
-require('lspconfig').clangd.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-require('lspconfig').pylyzer.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-}
-
-require('lspconfig').tsserver.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-}
-
---require('lspconfig').rust_analyzer.setup {
---    on_attach = on_attach,
---    capabilities = capabilities,
-
---    settings = {
---        ['rust-analyzer'] = {
---           imports = {
---                granularity = {
---                    group = "module",
---                },
---                prefix = "self",
---            },
---            cargo = {
---                buildScripts = {
---                    enable = true,
---                },
---            },
---            procMacro = {
---                enable = true
---            },
---        }
---    }
---}
+for _, lsp in ipairs(servers) do
+    require('lspconfig')[lsp].setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+    }
+end

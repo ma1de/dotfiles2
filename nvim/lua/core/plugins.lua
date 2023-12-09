@@ -174,5 +174,14 @@ require("lazy").setup({
 
             require('which-key').setup {}
         end
-    }
+    },
+
+    {
+        "junegunn/fzf"
+    },
+
+    -- god forgive me for what im about to do
+    {
+        'OmniSharp/omnisharp-vim'
+    },
 })

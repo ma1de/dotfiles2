@@ -23,5 +23,6 @@ vim.cmd [[set lcs+=space:·]]
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>git', ':LazyGit<CR>')
+vim.keymap.set('n', '<leader>fzf', ':FZF<CR>')
 
 require('mason').setup()
