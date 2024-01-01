@@ -1,0 +1,6 @@
+require('core.plugin.lualine')
+require('core.plugin.nvim-tree')
+require('core.plugin.treesitter')
+require('core.plugin.lsp')
+require('core.plugin.completions')
+require('core.plugin.jdtls')

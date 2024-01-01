@@ -1,8 +1,6 @@
 local cmp = require('cmp')
 local lspkind = require('lspkind')
 
---require('luasnip.loaders.from_vscode').lazy_load()
-
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
         ['<C-b'] = cmp.mapping.scroll_docs(-4),
@@ -30,7 +28,7 @@ cmp.setup({
     },
     snippet = {
         expand = function(args)
-            vim.fn["vsnip#anonymous"](args.body) -- because we are using the vsnip cmp plugin
+            vim.fn["vsnip#anonymous"](args.body)
         end,
   },
 })
