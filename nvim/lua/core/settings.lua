@@ -8,14 +8,19 @@ vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.autoread = true
 
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.shiftround = true
 vim.opt.expandtab = true
 
 vim.wo.number = true
 
 require('nvim-tree').setup()
+
+vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
+vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
+vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
+vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
 
 vim.wo.number = true
 vim.opt.relativenumber = true
@@ -39,6 +44,9 @@ vim.keymap.set('n', '<leader>git', ':LazyGit<CR>')
 
 -- fuzzyfinder
 vim.keymap.set('n', '<leader>fzf', ':FZF<CR>')
+
+-- trouble
+vim.keymap.set('n', '<leader>tr', ':TroubleToggle<CR>')
 
 -- [MAPPINGS END]
 
