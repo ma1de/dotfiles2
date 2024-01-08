@@ -25,7 +25,7 @@ vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSig
 vim.wo.number = true
 vim.opt.relativenumber = true
 
-vim.cmd [[colorscheme rose-pine]]
+vim.cmd [[colorscheme palenightfall]]
 
 -- [MAPPINGS START]
 
@@ -47,6 +47,9 @@ vim.keymap.set('n', '<leader>fzf', ':FZF<CR>')
 
 -- trouble
 vim.keymap.set('n', '<leader>tr', ':TroubleToggle<CR>')
+
+-- glow
+vim.keymap.set('n', '<leader>gl', ':Glow<CR>')
 
 -- [MAPPINGS END]
 

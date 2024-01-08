@@ -1,4 +1,4 @@
-local servers = {"html", "cssls", "clangd", "pylyzer", "tsserver", "gopls", "gradle_ls"};
+local servers = {"html", "cssls", "clangd", "pylyzer", "tsserver", "gopls", "gradle_ls", "omnisharp"};
 
 require('mason-lspconfig').setup({
     ensure_installed = servers
